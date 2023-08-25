@@ -5,10 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
    
+=======
+
+@NgModule({
+  declarations: [
+    AppComponent
+
   ],
   imports: [
     BrowserModule,
