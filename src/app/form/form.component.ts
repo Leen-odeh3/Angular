@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-  name:String='';
+  username: string = '';
 
-  onclick(){
-    this.name='';
-  }
-
-  submit(event:Event){
-    this.name=(event.target as HTMLInputElement).value;
+  constructor() { }
+  
+  resetButton(): void {
+    this.username = '';
   }
 }
