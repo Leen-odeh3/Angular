@@ -3,3 +3,8 @@ h1,.alert{
   height: 50px;
   margin: 20px 150px;
 }
+.alert{
+  text-align: center;
+  padding-top: 20px;
+  background-color: #ffecb5;
+}
