@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1> Assignment-2</h1>
+
+      <div class="form">
+
+        <label>Username</label>
+        <input type="text" [(ngModel)]="username">
+        <p>Welcome!  {{ username }}</p>
+
+        <button [disabled]="username == ''" (click)="resetButton()" class="btn">Click</button>
+      </div>
+
+    </div>
+  </div>
+</div>
