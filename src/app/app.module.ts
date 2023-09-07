@@ -7,6 +7,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    FormComponent
+    FormComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
