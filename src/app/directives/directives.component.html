@@ -1,0 +1,14 @@
+<div class="main">
+
+<h2>Task-3 Directives</h2>
+<button class="space-btn btn" (click)="onToggleDetails()">Display Details</button>
+
+<p *ngIf="showSecret">Secret Password = tuna</p>
+
+<div class="display" *ngFor="let logItem of log; let i = index;"
+  [ngStyle]="{ backgroundColor: i > 3 ? '#75b2eb' : 'transparent' }"
+  [ngClass]="{ 'white-text': i > 3 }">
+  {{ logItem }}
+</div>
+
+</div>
