@@ -7,12 +7,23 @@ import { Component } from '@angular/core';
 })
 export class DirectivesComponent {
 
+  content: string ='Secret Password = tuna';
   showSecret: boolean = false;
-  log: Date[] = []
+  time: number = new Date().getTime();
 
-  onToggleDetails() {
+  Log: number[] = [];
+  items= 5;
+
+  toggle() {
+   this.Log.push(this.time);
     this.showSecret = !this.showSecret;
-    this.log.push(new Date());
   }
-  
+
+  getColor(i: number): string {
+    if (i >= this.items) {
+      return 'blue';
+    } else {
+      return 'white';
+    }
+  }
 }
